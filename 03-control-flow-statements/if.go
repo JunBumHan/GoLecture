@@ -16,10 +16,23 @@ func main() {
 	// 	fmt.Println("True")
 	// }
 
+	// if 초기문
+	if a, b := getInteger(), getInteger(); a > b {
+		fmt.Println("a > b")
+	} else if a < b {
+		fmt.Println("a < b")
+	} else {
+		fmt.Println("==")
+	}
+
 	// 쇼트서킷 조심!
 	if a > b && a < b {
 		fmt.Println("쇼트서킷 조심!")
 	} else if a > b || a < b {
 		fmt.Println("쇼트서킷 조심!")
 	}
+}
+
+func getInteger() int {
+	return 5
 }
