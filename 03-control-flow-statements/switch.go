@@ -17,7 +17,7 @@ func main() {
 		fmt.Println("?")
 	}
 
-	switch a = 5; a {
+	switch a = getInteger(); a { // siwtch 초기문
 	case 3:
 		fmt.Println("a is 3")
 	case 2:
@@ -50,4 +50,8 @@ func main() {
 		fmt.Println("a is ?")
 	}
 
+}
+
+func getInteger() int {
+	return 5
 }
