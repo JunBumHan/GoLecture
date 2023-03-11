@@ -14,7 +14,7 @@ func main() {
 	// 쇼트서킷 조심!
 	if a > b && a < b {
 		fmt.Println("쇼트서킷 조심!")
-	} else {
+	} else if a > b || a < b {
 		fmt.Println("쇼트서킷 조심!")
 	}
 }
