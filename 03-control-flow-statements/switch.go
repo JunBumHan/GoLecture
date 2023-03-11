@@ -17,6 +17,17 @@ func main() {
 		fmt.Println("?")
 	}
 
+	switch a = 5; a {
+	case 3:
+		fmt.Println("a is 3")
+	case 2:
+		fmt.Println("a is 2")
+	case 1:
+		fmt.Println("a is 3")
+	default:
+		fmt.Println("?")
+	}
+
 	switch { // == switch true {}
 	case a == 1:
 		fmt.Println("a is 1")
