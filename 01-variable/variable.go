@@ -10,9 +10,12 @@ func main() {
 
 	// := 키워드를 이용해 선언한다. (데이터 타입을 추론한다)
 	var2 := 5 // int형으로 자동적으로 타입 추론 된다
+
 	// 여러개를 묶어 선언하기
 	var3, var4, var5 := 0, 1, 2
 	var var6, var7, var8 int
+
+	var3, var4 = var4, var3
 
 	// 괄호로 묶어 선언하기
 	var (
@@ -22,3 +25,9 @@ func main() {
 	)
 
 }
+
+/*
+이것만 기억하자
+var name type = 5
+name := 5
+*/
